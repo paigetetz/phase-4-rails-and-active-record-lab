@@ -1,5 +1,5 @@
 class Student < ApplicationRecord
-    to_s do
+    def to_s
         self.first_name + " " + self.last_name
     end
 
